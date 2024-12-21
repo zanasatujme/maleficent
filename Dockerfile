@@ -7,7 +7,7 @@ RUN apt-get update && \
   zip \
   unzip \
   imagemagick \
-  libwebp \
+  
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
