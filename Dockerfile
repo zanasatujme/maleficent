@@ -3,6 +3,7 @@ FROM node:lts-buster
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
+  python \
   imagemagick \
   webp && \
   apt-get upgrade -y && \
@@ -14,6 +15,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 8080
 
 CMD ["node", "index"]
