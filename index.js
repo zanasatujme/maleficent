@@ -1,5 +1,6 @@
 console.log('🕒 Starting Maleficent . . .');
 const path = require('path');
+process.env.TERM = 'xterm'
 const { spawn } = require('child_process');
 require('utils-mf/lib/__on.js')();
 const start = () => {
